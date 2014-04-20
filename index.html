@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <article>
+
+            <h1>AP Computer Science Study Guide</h1>
+            <h6>Created by Philip La</h6>
+            <p>Welcome to the AP Computer Science Study Guide. Let's jump right in.</p>
+            <br/>
+
+            <section id="toc">
+                <h2>Table of Contents</h2>
+                <a href="#comments">1. Comments</a><br/>
+                <a href="#strings">2. Intro to Strings</a><br/>
+                <a href="#variable">3. Variables</a><br/>
+                <a href="#primitive-data-types">4. Primitive Data types</a><br/>
+                <a href="#math-operators">5. Using Mathematical Operators</a><br/>
+                <a href="#math-class">6. The Math Class</a><br/>
+                <a href="#random-class">7. Random Class</a><br/>
+                <a href="#conditionals">8. Intro to Conditionals</a><br/>
+                <a href="#object">9. Objects</a><br/>
+                <a href="#naming-conventions">10. Naming Conventions</a><br/>
+                <a href="#advanced-conditionals">11. Advanced Conditionals Statements</a><br/>
+                <a href="#arrays">12. Arrays</a><br/>
+                <a href="#more-strings">13. A more in depth look at strings</a><br/>
+                <a href="#2d-array">14. 2D Arrays</a><br/>
+                <a href="#arraylist">15. Array list</a><br/>
+                <a href="#inheritance">16. Inheritance and Polymorphism</a>
+            </section>
+            <br/>
+
+            <hr>
+
+            <section id="comments">
+                <h3>Comments</h3>
+                <ul><li>Long Comment</li></ul>
+                <pre><code>
+                    /*
+                     *  This is
+                     *  a long comment.
+                     */
+                </code></pre>
+                <ul>
+                    <li>Short Comment</li>
+                    <p><code>// This is a short comment.</code></p>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="strings">
+                <h3>Intro to Strings</h3>
+                <ul>
+                    <li><strong>String</strong> is the line of text, object in java, defined by the String class.</p></li>
+                    <li>String concatenation - Use <code>+</code> operator which adds multiple strings or number</li>
+                    <li>Escape Sequence</li>
+                </ul>
+                <img src="http://i.imgur.com/32FQrxw.png" alt="Escape Sequence Table">
+                <p><code>\n</code> and <code>\"</code> will be the escape sequence you will used most frequently.</p>
+            </section>
+
+            <hr>
+
+            <section id="variable">
+                <h3>Variables</h3>
+                <ul>
+                    <li><strong>Variables</strong> in math and science represents something useful. In Computer Science, a variable is an identifier of a memory location.</li>
+                    <li>Location's value can be modified.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="primitive-data-types">
+                <h3>Primitive Data Types</h3>
+                <p><code>int</code> = integer (-2, 147, 9, ...)</p>
+                <p><code>double</code> = floating point number, twice as much memory than <code>float</code></p>
+                <p><code>boolean</code> = true/false</p>
+                <p><code>char</code> = single character</p>
+                <ul>
+                    <li>All primitive types and memory cost</li>
+                    <p><code>int</code> 4 bytes</p>
+                    <p><code>byte</code> 1 bytes</p>
+                    <p><code>short</code> 2 bytes</p>
+                    <p><code>long</code> 8 bytes</p>
+                    <p><code>double</code> 8 bytes</p>
+                    <p><code>float</code> 4 bytes</p>
+                    <p><code>chat</code> 2 bytes</p>
+                </ul>
+                <ul><li>String is not a primitive type.</li></ul>
+            </section>
+
+            <hr>
+
+            <section id="math-operators">
+                <h3>Using Mathematical Operators</h3>
+                <ul>
+                    <li>PEMDAS</li>
+                    <li>Operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>(modulus - gets the remainder), <code>=</code> (assign <strong>NOT EQUAL</strong>)</li>
+                    <li>Parentheses overrides the operation order</li>
+                    <li>Defining a variable: </li>
+                </ul>
+                <img src="http://i.imgur.com/U2Jhk27.png" alt="Defining a variable example">
+                <ul>
+                    <li><strong>Casting</strong> is converting from one data type to another.</li>
+                    <p><code>double square = (int)98.28; // Becomes 98</code></p>
+                    <li>More operators</li>
+                    <p><code>++</code> increment</p>
+                    <p><code>--</code> decrement</p>
+                    <p><code>+=</code> add then assign</p>
+                    <p><code>-=</code> subtract then assign</p>
+                    <p><code>*=</code> multiply then assign</p>
+                    <p><code>/=</code> divide then assign</p>
+                    <p><code>%=</code> get the reminder then assign</p>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="math-class">
+                <h3>The Math Class</h3>
+                <ul>
+                    <li>Java has a built in math class that can deal with mathematical operations that are more complex than simple operation.</li>
+                    <p><code>Math.operation(your parameter);</code></p>
+                    <li>Assume <code>num</code> is a declared variable</li>
+                    <p><code>int abs(int num) // returns absolute value</code></p>
+                    <p><code>double pow(double num, double power) // returns number to the power</code></p>
+                    <p><code>double sqrt(double num) // returns square root of positive number</code></p>
+                    <p><code>double random() // returns number between 0.0 &amp; 1.0</code></p>
+                    <p><code></code></p>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="random-class">
+                <h3>Random Class</h3>
+                <pre><code>
+                Random generator = new Random();
+                generator.nextInt(n); //return 1 to n-1
+                generator.nextDouble(); // returns same as math double random()
+                </code></pre>
+            </section>
+
+            <hr>
+
+            <section id="conditionals">
+                <h3>Intro to Conditionals</h3>
+                <ul>
+                    <li>if/else</li>
+                    <li>switch</li>
+                    <li>while</li>
+                    <li>do-while</li>
+                    <li>for</li>
+
+                    <h4>Equality Operators</h4>
+                    <p><code>==</code> means equals (= is the assignment operator)</p>
+                    <p><code>!=</code> means not equal to</p>
+
+                    <h4>Relational Operator</h4>
+                    <p><code>&gt;</code>, <code>&lt;</code> meaning greater than or less than</p>
+                    <p><code>&gt;=</code>, <code>&lt;=</code> means greater tha nor equal to or less tahn or equal to</p>
+
+                    <h4>Logical Operators</h4>
+                    <p><code>!</code> means <strong>not</strong></p>
+                    <p>Example: <code>!true // means not true or false</code></p>
+                    <p><code>&amp;&amp;</code> means <strong>and</strong></p>
+                    <p>Example: <code>if (i &gt; 5 &amp;&amp; i &lt; 10) // i has to be between 5 and 10 to be true</code></p>
+                    <p><code>||</code> means <strong>or</strong></p>
+                    <p>Example: <code>if (i &lt; 0 || i &gt; 1) // i has to be less than 0 or greater than 1 to be true</code></p>
+                </ul>
+
+                <h4>The if statement</h4>
+                <ul><li>This statement will do the next thing if the contents in the parentheses is found to be true. Otherwise, the statement will be skipped.</li></ul>
+                <pre>
+                <strong>Example:</strong>
+                <code>
+                if (cuteness > 5) {
+                    girl.askForNumber();
+                }
+                </code></pre>
+
+                <h4>The else statement</h4>
+                <ul><li>This statement provides a secondary path of execution when an `if` clause evaluates to false.</li></ul>
+                <pre>
+                <strong>Example:</strong>
+                <code>
+                if (housing != livesWithParents) {
+                    girl.giveRealNumber(); 
+                } else {
+                    girl.giveRandomNumber();
+                }
+                </code></pre>   
+
+                <h4>The while statement</h4>
+                <ul>
+                    <li>If the statement is true, it will continue to run the code until it is false.</li>
+                    <li>Beware of infinite loops.</li>
+                </ul>
+                <pre>
+                <strong>Example:</strong>
+                <code>
+                int n = 1;
+                int endPoint = 10;
+                while (n &lt;= endPoint) {
+                    System.out.println(number);
+                    n++;
+                }
+                </code></pre>
+
+                <h5>Sentinel Value</h5>
+                <ul><li>Sentinel, or "flag value" is a special value. It is usually provided to end a program.</li></ul>
+
+                <h4>The for statement</h4>
+                <ul><li>The for statement provides a compact way to iterate over a range of values.</li></ul>
+                <pre><code>
+                for (initialization; termination; increment) {
+                    statement(s)
+                }
+                </code></pre>
+                <ul>
+                    <li>When using this version of the for statement, keep in mind that:</li>
+                    <ul>
+                        <li>The initialization expression initializes the loop; it's executed once, as the loop begins.</li>
+                        <li>When the termination expression evaluates to false, the loop terminates.</li>
+                        <li>The increment expression is invoked after each iteration through the loop; it is perfectly acceptable for this expression to increment or decrement a value.</li>
+                    </ul>
+                </ul>
+
+                <pre>
+                <strong>Examples:</strong>
+                <code>
+                for (int i = 1; i &lt;= 10; i++) {
+                    System.out.println(i);
+                }
+
+                for (int i = 0; i &lt; 50; i++) {
+                    System.out.println("I will not throw paper planes in class");
+                }
+                </code>
+                </pre>
+
+                <h4>The switch statement</h4>
+                <ul><li>The switch statement can have a number of possible execution paths.</li></ul>
+
+                <pre>
+                <strong>Example:</strong>
+                <code>
+                int month = 8;
+                String monthString;
+                switch (month) {
+                    case 1:  monthString = "January";
+                             break;
+                    case 2:  monthString = "February";
+                             break;
+                    case 3:  monthString = "March";
+                             break;
+                    case 4:  monthString = "April";
+                             break;
+                    case 5:  monthString = "May";
+                             break;
+                    case 6:  monthString = "June";
+                             break;
+                    case 7:  monthString = "July";
+                             break;
+                    case 8:  monthString = "August";
+                             break;
+                    case 9:  monthString = "September";
+                             break;
+                    case 10: monthString = "October";
+                             break;
+                    case 11: monthString = "November";
+                             break;
+                    case 12: monthString = "December";
+                             break;
+                    default: monthString = "Invalid month";
+                             break;
+                }
+                System.out.println(monthString);
+                </code>
+                </pre>
+            </section>
+
+            <hr>
+
+            <section id="object">
+                <h3>Objects</h3>
+                <ul>
+                    <li>What's the point?</li>
+                    <ul>
+                        <li>Reuse code, break down problem solutions, divide and conquer, avoid errors.</li>
+                        <li>A good object will be a thing, not an action. Example: Triangle, Snowman</li>
+                    </ul>
+
+                    <li>Anatomy of a Class</li>
+                    <ul>
+                        <li>Class Name</li>
+                        <li>Class Data</li>
+                        <li>Constructor (sets the initial data)</li>
+                        <li>Method declarations (what the class does)</li>
+                    </ul>
+
+                    <li>Visibility (aka scope)</li>
+                    <ul>
+                        <li>public: anything outside of the class</li>
+                        <li>private: can only be used within the class</li>
+                        <li>protected: not used at this time</li>
+                    </ul>
+                </ul>
+
+                <img src="http://i.imgur.com/MB5pHtQ.png" alt="Defining a constructor example">
+
+                <li>Methods do the work and are usually verbs.</li>
+            </section>
+
+            <hr>
+
+            <section id="naming-conventions">
+                <h3>Naming Conventions</h3>
+                <ul>
+                    <li>With multiple words:</li>
+                    <p><code>allWordsAfterFirstCapitalized</code></p>
+                    <li>Classes: Capital first letter</li>
+                    <li>Methods: lower case first letter</li>
+                    <li>Variables: lower case first letter</li>
+                    <li>Constants: ALL_CAPS_WITH_UNDERSCORES</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="advanced-conditionals">
+                <h3>Advanced Conditional Statements</h3>
+
+                <h4>String Comparison</h4>
+                <p>Remember String is an object.</p>
+                <p><code>string1 == string2 </code> tests for reference equality and is for testing whether two strings are the same object. Use <code>string1.equals(string2)</code> to test for value equality.</p>
+                <p>The Comparable interface contains only one method, compareTo, which takes an object as a parameter and returns an integer. If you need comparison functionality, you should implement the comparable interface. The String class implements the Comparable interface. Strings are compared character by character. Each character is encoded and stored in binary.</p>
+                <p>I the first characters are the same, then the next ones are compared and son. This basically does an alphabetization. Think of the string in the parenthesis as "the OTHER string".</p>
+
+                <pre>
+                <strong>Example:</strong>
+                <code>
+                    String s1, s2; // s1 and s2 are assigned values
+
+                    int result = s1.compareTo( s2 );
+                    if ( result &gt; 0 ) {
+                        System.out.println( s1 + " is greater" );
+                    } else if ( result &lt; 0 ) {
+                        System.out.println( s2 + " is greater" );
+                    } else {
+                        System.out.println( "equal" );
+                    }
+                </code>
+                </pre>
+
+                <h4>Float Comparison</h4>
+                <p>It's a general rule that floating point number should never be compared like (a==b), but rather like (abs(a-b) &lt; delta) where delta is a small number. A floating point value having fixed number of digits in decimal form does not necessary have fixed number of digits in binary form.</p>
+
+                <h4>Character Comparison</h4>
+                <p>Character values are numbers in the Unicode character set. They are in order, but upper and lowercase is seperator, so try not to use a&gt;b.</p>
+            </section>
+
+            <hr>
+
+            <section id="arrays">
+                <h3>Arrays</h3>
+                <ul>
+                    <li>Arrays are objects used to group and organize data. They are a sequence of values of the same type.</li>
+                    <li>The values held in an array are called array elements.</li>
+                    <li>An array stores multiple values of the same type (the element type).</li>
+                    <li>The element type can be a primitive type or an object reference.</li>
+                    <li>Thus, we can create an array of integers or an array of characters, or an array of string, objects, etc.</li>
+                    <li>In Java, the array itself is an object.</li>
+                </ul>
+                <img src="http://i.imgur.com/eZa36Bv.png" alt="Array Definition Example">
+                <ul>
+                    <li>Mistakes</li>
+                    <ul>
+                        <li>Bound Errors - modified elements beyond the array</li>
+                        <li>Uninitialized arrays</li>
+                        <li>Unfilled arrays null reference</li>
+                    </ul>
+
+                    <li>Use constants to show array length</li>
+                    <p><code>final int POWER = 5;<br/>int[] powerLevels = new int[POWER];</code></p>
+                    
+                    <li>Use the length method to always avoid bound errors.</li>
+                    <pre>
+                    <strong>Example:</strong>
+                    <code>
+                    for (int index = 0; index &lt; array.length; index++) {
+                        // do something here
+                    }
+                    </code>
+                    </pre>
+
+                    <ul>
+                        <li>The array starts at 0 (remember value 1 is at location 0)</li>
+                        <li>The array goes to the length of the array</li>
+                        <li>Bound error is avoided by using less than evaluation</li>
+                    </ul>
+
+                    <li>For each statement</li>
+
+                    <pre>
+                        <strong>Example:</strong>
+                    <code>
+                        // for each digit in the array numbers, goes through the entire array
+                        for (int digit: numbers) {
+                            // do something here
+                        }
+                    </code>
+                    </pre>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="more-strings">
+                <h3>A more in depth look at strings</h3>
+                <h4>Primitive Data Type - Char</h4>
+                <ul><li>Char is a primitive data type. Example: <code>char letter = 'a';</code></li></ul>
+                <p>String is an array of chars.</p>
+                <h4>Methods of the String Class</h4>
+                <ul>
+                    <li>int length() - length of the string</li>
+                    <li>String substring(int from, int to) - returns String from to to-1</li>
+                    <li>String substring(int from) - return string from all the way to the end of the string</li>
+                    <li>int indexOf(String str) - returns index of first found str. returns -1 if not found.</li>
+                    <li>char charaAt(int index) - returns character at given index</li>
+                    <li>int compareTo - compares two strings</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="2d-array">
+                <h3>2D Arrays</h3>
+                <ul>
+                    <li>A two-dimensional array is really nothing more than an array of arrays (a three-dimensional array is an array of arrays of arrays). </li>
+                </ul>
+                <pre>
+                <strong>Try the following:</strong>
+                <code>
+                int[][] multi = new int[5][10];
+                </code> 
+                <strong>... which is a short hand for something like this:</strong>
+                <code>
+                int[][] multi = new int[5][];
+                multi[0] = new int[10];
+                multi[1] = new int[10];
+                multi[2] = new int[10];
+                multi[3] = new int[10];
+                multi[4] = new int[10];
+                </code>
+                <strong>Note that every element will be initialized to the default value for int, 0, so the above are also equivalent to:</strong>
+                <code>
+                int[][] multi = new int[][]{
+                  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+                };
+                </code>
+                </pre>
+
+                <ul><li>Looping through 2d arrays:</li></ul>
+                <pre><code>
+                for(int i = 0; i &lt; array.length; i++) {
+                    for(int j = 0; j &lt; array[0].length; j++) {
+                      // do something here
+                    }
+                }
+                //I'd recommend j &lt; array[i] here. Nothing 
+                //changes on this case, but it would bring 
+                //some trouble if the second dimension of the 
+                //array was not the same for every case.
+                </code></pre>
+                <ul><li>The first for iterates over the array of five int arrays, that's why i goes from 0 to 4 and the array's length is 5. The second for iterates over the indexes of the int contained on the first array (the one with length 5). This arrays have a length of 10 elements.</li></ul>
+            </section>
+
+            <hr>
+
+            <section id="arraylist">
+                <h3>Array List</h3>
+                <ul>
+                    <li>Dynamically changes size depending on what is needed</li>
+                    <li>Allows you to specialize on the ArrayList&lt;String&gt; or ArrayList&lt;int&gt; etc.</li>
+                    <li>The Wrapper Class:</li>
+                    <ul>
+                        <li>Each of Java's eight primitive data types has a class dedicated to it. These are known as wrapper classes, because they "wrap" the primitive data type into an object of that class. So, there is an Integer class that holds an int variable, there is a Double class that holds a double variable, and so on. The wrapper classes are part of the java.lang package, which is imported by default into all Java programs.</li>
+                        <li>As you are aware, In Java not everything is an Object. There are primitive types such as int ,double float etc. So if you wanted to use a primitive type in place of Object i.e. if a method expects an Object but you need to send in a primitive type, without Wrapper classes this wouldn't be possible. Take for instance the Map interface. The put(Object,Object) method takes Objects as both key and value. If you, for example wanted to store a mapping between an integer value 1 (int i=1) to an Object, without wrapper classes this wouldn't be possible. Wrapper classes are used to represent primitive values when an object is required.</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="inheritance">
+                <h3>Inheritance and Polymorphism</h3>
+                <ul>
+                    <li>Subclass - class that is extension of the larger class</li>
+                    <li>Superclass - class above a class</li>
+                    <li>Subclasses - define more specific behaviors, Is-A-Relationship</li>
+                    <li>To inherit the functionality of superclass, use the key word <code>extends</code></li>
+                    <pre>
+                    <strong>Example:</strong>
+                    <code>
+                    public class Object extends SuperClass {
+                        // do something here
+                    }
+                    </code>
+                    </pre>
+                    <li>Subclasses can override methods of superclasses and can use methods of superclasses</li>
+                </ul>
+            </section>
+
+        </article>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
