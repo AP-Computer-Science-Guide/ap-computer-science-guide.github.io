@@ -538,6 +538,32 @@
                 </ul>
             </section>
 
+            <hr>
+
+            <section id="recursion">
+                <h3>Recursion</h3>
+                <ul>
+                    <strong>What is recursion?</strong>
+                    <li>Recursion is when the method directly or indirectly invokes itself.</li>
+                    <pre>
+                    <strong>Example:</strong>
+                    <code>
+                    public int factorial (int x) {
+                        if (x > 1) {
+                            //recursive case:
+                            return factorial(x-1) * x;
+                        } else  /*base case*/
+                            return 1;
+                        }
+                    }
+                    </code>
+                    </pre>
+                    <strong>Following the code when it is factorial(3):</strong>
+                    <img src="http://www.programmerinterview.com/images/stack.png" alt="showing recusion">
+                    <li>Without a base case in recursion the stack overflows</li>
+                </ul>
+            </section>
+
         </article>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
